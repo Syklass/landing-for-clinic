@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+	* {
+		@apply leading-snug text-black-30;
+		font-family: 'Raleway', sans-serif;
+	}
+	body{
+		background-color: #F9F9F9;
+	}
+    .padding-x {
+		@apply px-6 lg:px-16 xl:px-20;
+	}
+    .padding-l {
+		@apply pl-6 lg:pl-16 xl:pl-20;
+	}
+	.btnDoctor{
+		background: linear-gradient(180deg, #B5CFE4 0%, #9DC5DE 100%);
+		border-bottom: 3px solid #71A1C0;
+		border-radius: 10px;
+	}
+	.btnDoctor:hover{
+		background: linear-gradient(180deg, #7999B3 0%, #9DC5DE 100%);
+	}
+	.btnHead{
+		background: linear-gradient(180deg, #B5CFE4 0%, #D2E5F1 100%);
+		border-radius: 5px;
+	}
+	.btnHead:hover{
+		background: linear-gradient(180deg, #D2E5F1 0%, #B5CFE4 100%);
+	}
+	.btnModal{
+		background: linear-gradient(288.64deg, #B5CFE4 -10.83%, #87AECE 102.26%);
+		border-radius: 10px;
+	}
+	.btnModal:hover{
+		background: linear-gradient(288.64deg, #87AECE -10.83%, #B5CFE4 102.26%);
+	}
+	.phoneBlock:hover .phoneIconBg{
+		@apply bg-blue-85
+	}
+	.ResTextLogo{
+		@apply text-[45px];
+		font-family: 'Raleway';
+		font-style: normal;
+		font-weight: 600;
+		line-height: 140%;
+		/* identical to box height, or 63px */
+
+		letter-spacing: -0.01em;
+
+		background: linear-gradient(180deg, #786643 0%, #E2BD75 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		text-fill-color: transparent;
+	}
+	.bgGrad{
+		background: linear-gradient(90.64deg, rgba(255, 255, 255, 0.96) 42.16%, rgba(255, 255, 255, 0) 100.53%);
+	}
+	.bgGrad2{
+		background: linear-gradient(90.64deg, rgba(255, 255, 255, 0.96) 60.16%, rgba(255, 255, 255, 0) 150.53%);
+	}
+}
+
+
+.modal_input {
+	border-bottom: 1px solid #B3B3B3;
+}
+
+.modal_title{
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 28px;
+	line-height: 33px;
+
+	/* identical to box height */
+	text-align: center;
+
+	color: #786643;
+}
+
+
+@media (max-width:500px) {
+	.bgGrad{
+		background: linear-gradient(90.64deg, rgba(255, 255, 255, 0.96) 70.16%, rgba(255, 255, 255, 0) 100.53%);
+	}
+}
